@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños, Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Amor</title>
+    <style>
+      body {
+        /*margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      min-height: 100vh;*/
+
+
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        background: linear-gradient(270deg, #e63946, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #2e61b9, #032969, #246470,
+            #3eb37c, #4cb827, #94c214, #d4d431, #e9be13);
+        background-size: 800% 800%;
+        animation: gradiente 30s ease infinite;
+        text-align: center;
+        color: #333;
+        overflow-x: hidden;
+        height: 100vh;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .card {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 2;
+      }
+
+      .card h2 {
+        color: #e63946;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        background: #e63946;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #ec0808;
+      }
+
+      footer {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.4);
+        border-top: 2px solid #fff;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* Contenedor de animaciones */
+      .animaciones {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .float {
+        position: absolute;
+        font-size: 2rem;
+        animation: flotar 8s linear forwards;
+      }
+
+      @keyframes flotar {
+        0% {
+          transform: translateY(100vh) scale(0.8);
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateY(-10vh) scale(1.2);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>🎂 ¡Feliz Cumpleaños, Mi Amor! 🎉</h1>
+    </header>
+
+    <div class="card">
+      <h2>💖 Para Ti 💖</h2>
+
+      <p><b><i>🌸 Poema para mi Camila (mi mosca)🌸</i></b></p>
+
+      <p></b><i>Camila, tu nombre es melodía,
+          como un sol que ilumina el día.
+          Con tu risa, la vida florece,
+          y cada instante contigo enriquece.
+
+          Tus ojos reflejan ternura,
+          tu alma desprende dulzura.
+          Eres un faro que nunca se apaga,
+          una esperanza que siempre se abraza.
+
+          Hoy celebramos tu nacimiento,
+          lleno de amor y de sentimiento.
+          Que la vida te dé alegría infinita,
+          y cada sueño tuyo se invite a la cita.
+
+          Camila, en tu día especial,
+          te deseo un mundo sin igual.
+          Que la felicidad siempre te llame,
+          y que el amor te envuelva y te abrace.
+
+
+          Hoy celebro el regalo más hermoso de mi vida: tenerte a mi lado.
+          Gracias por llenar mis días de alegría, amor y sonrisas.
+          Deseo que este nuevo año te traiga momentos tan maravillosos como tú me das.
+          ¡Te amo con todo mi corazón! ❤️
+        </i></b></p>
+
+      <button class="btn" onclick="mostrarMensaje()">💖 Que es lo que eres paa mi ?🌸Tocame y te lo dire✨</button>
+      <p id="mensajeSorpresa" class="hidden"><b><i>✨ Eres el amor de mi vida y mi razón de sonreír cada día 💕</i>></b></p>
+
+      <div class="gallery">
+      <img src="cam1.jpg" alt="foto1">
+      <img src="cam2.jpg" alt="Foto 2">
+      <img src="cam3.jpg" alt="Foto 3">
+    </div>
+    </div>
+
+    <footer>
+      <p><b><i> con mucho ❤️ solo para ti</i></b></p>
+      <button class="btn" onclick="toggleMusica()">🎶 Música</button>
+      <audio id="musica" loop>
+        <source src="btsmusica.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+
+
+
+
+    <footer>
+      <p><b><i>Nomas para no ser tan serios</i></b></p>
+      <button class="btn" onclick="mosca()">🎶 TOCAME</button>
+      <audio id="music" loop>
+        <source src="mosca.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+
+
+
+    <!-- Contenedor donde se generarán globos/corazones -->
+    <div class="animaciones"></div>
+
+    <script>
+      // Mostrar mensaje sorpresa
+      function mostrarMensaje() {
+        document.getElementById("mensajeSorpresa").classList.toggle("hidden");
+      }
+
+      // Música
+      function toggleMusica() {
+        const musica = document.getElementById("musica");
+        if (musica.paused) {
+          musica.play();
+        } else {
+          musica.pause();
+        }
+      }
+
+      function mosca() {
+        const musica = document.getElementById("musica");
+        if (musica.paused) {
+          musica.play();
+        } else {
+          musica.pause();
+        }
+      }
+
+      // Globos y corazones animados
+      function crearAnimaciones() {
+        const simbolos = ["🎈", "🎉", "💕", "💖"];
+        const elemento = document.createElement("div");
+        elemento.classList.add("float");
+        elemento.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+        elemento.style.left = Math.random() * window.innerWidth + "px";
+        elemento.style.animationDuration = (5 + Math.random() * 5) + "s";
+        document.querySelector(".animaciones").appendChild(elemento);
+
+        setTimeout(() => elemento.remove(), 9000);
+      }
+
+      setInterval(crearAnimaciones, 800);
+    </script>
+  </body>
+
+  </html>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
